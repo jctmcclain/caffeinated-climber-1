@@ -3,11 +3,7 @@ table, th, td {
   border-collapse: collapse;
 }
 body {
-  .bg-image {
-  background-image: url("images/caffeinated_climber.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  filter: blur(8px);
+  .bg-color {
+    background-color: #FCD19C;
 }
 }
