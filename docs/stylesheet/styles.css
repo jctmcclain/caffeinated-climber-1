@@ -2,3 +2,9 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+body {
+  background-image: url("caffeinated_climber.jpeg");
+  background-color: #cccccc;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
