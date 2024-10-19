@@ -3,6 +3,10 @@
   height: 20px;
   text-align: center;
   background-color: lightblue;
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
 }
 .column {
   float: left;
@@ -10,7 +14,7 @@
   height: 200px;
 }
 .menu {
-  width: 25%;
+  width: 35%%;
   height: 200px;
   background-color: lightblue;
   table, th, td {
