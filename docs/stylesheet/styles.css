@@ -2,6 +2,12 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+table {
+  width: 50%;
+}
+th {
+  height: 15px;
+}
 body {
   .bg-color {
     background-color: #FCD19C;
