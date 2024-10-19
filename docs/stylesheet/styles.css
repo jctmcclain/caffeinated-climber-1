@@ -3,11 +3,14 @@ table, th, td {
   border-collapse: collapse;
 }
 table {
-  width: 50%;
+  width: 30%;
+  height: 200px;
 }
 th {
-  height: 15px;
+  height: 30px;
 }
 p {
   background-color: #BFE2FE;
+  background-size: auto;
+  background-position: relative;
   {
