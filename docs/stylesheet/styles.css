@@ -1,12 +1,12 @@
 .links {
-  width: 75%;
-  height: 20px;
-  text-align: center;
-  background-color: lightblue;
-  table, th, td {
+    table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    text-align: center;
   }
+  width: 75%;
+  height: 20px;
+  background-color: lightblue;
 }
 .column {
   float: left;
@@ -14,15 +14,16 @@
   height: 200px;
 }
 .left {
-  width: 35%%;
-  height: 200px;
-  background-color: lightblue;
   table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   }
-  th {
+    th {
     height: 30px;
+    }
+  width: 35%%;
+  height: 200px;
+  background-color: lightblue;
   }
 }
 .right {
