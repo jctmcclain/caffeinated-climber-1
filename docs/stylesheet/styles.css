@@ -1,4 +1,19 @@
+   .column {
+    float: left;
+    }
+    .left {
+    width: 30%;
+    } 
+    .right {
+    width: 60%;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
 table, th, td {
+    padding: 10px;
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
