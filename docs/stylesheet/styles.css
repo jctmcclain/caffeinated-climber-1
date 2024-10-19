@@ -1,33 +1,7 @@
-.links {
-    table, th, td {
+table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-  }
-  width: 75%;
-  height: 20px;
-  background-color: lightblue;
-}
-.column {
-  float: left;
-  padding: 10px;
-  height: 200px;
-}
-.left {
-  table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  }
-    th {
-    height: 30px;
-    }
-  width: 35%%;
-  height: 200px;
-  background-color: lightblue;
-  }
-}
-.right {
-  width: 65%;
-  height: 200px;
-  background-color: lightblue;
-}
+    width: 75%;
+    height: 20px;
+    background-color: lightblue;
