@@ -4,18 +4,25 @@
   text-align: center;
   background-color: lightblue;
 }
+.column {
+  float: left;
+  padding: 10px;
+  height: 200px;
+}
 .menu {
-  border: 1px solid black;
-  border-collapse: collapse;
-  width: 30%;
+  width: 25%;
   height: 200px;
   background-color: lightblue;
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
   th {
     height: 30px;
   }
 }
-p {
+.slideshow {
+  width: 65%;
+  height: 200px;
   background-color: lightblue;
-  background-size: auto;
-  background-position: relative;
-  {
+}
