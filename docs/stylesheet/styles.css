@@ -5,8 +5,6 @@ table, th, td {
 body {
   .bg-image {
   background-image: url("caffeinated_climber.jpeg");
-  background-color: #cccccc;
   filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 }
