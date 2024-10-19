@@ -1,23 +1,21 @@
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
 .links {
   width: 75%;
   height: 20px;
   text-align: center;
-  background-color: #BFE2FE;
+  background-color: lightblue;
 }
 .menu {
+  border: 1px solid black;
+  border-collapse: collapse;
   width: 30%;
   height: 200px;
-  background-color: #BFE2FE;
-}
-th {
-  height: 30px;
+  background-color: lightblue;
+  th {
+    height: 30px;
+  }
 }
 p {
-  background-color: #BFE2FE;
+  background-color: lightblue;
   background-size: auto;
   background-position: relative;
   {
