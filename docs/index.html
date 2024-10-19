@@ -10,17 +10,35 @@
     <p>
 <h2> Specialty coffee shops and climbing gear shops coming near you. Bags of delicious coffee beans complimented with climbing gear.</h2>     
     </p>
-<div class="links">
+  <div class="links">
   <table>
     <tr>
       <td><a href="toddbx21.github.io/caffeinated-climber/"><h4>Main Page</h4></a></td>
       <td><h4>About Us</h4></td>
     </tr>
   </table>
-</div>
-  <br>
-<div class="left">
-<table>
+   .column {
+    float: left;
+    }
+    .left {
+    width: 30%;
+    } 
+    .right {
+    width: 60%;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+ </head>
+ <body>
+    <div class="row">
+        <div class="column left" style="background-color: lightblue;">
+            <h2>Quick Menu Look</h2>
+            <p>
+          <table>
   <thead>
     <tr>
       <th> Name</th>
@@ -56,14 +74,20 @@
     </tr>
   </tbody>
 </table>
-</div>
-  <div class="right">
+        </p>
+        </div>
+        <div class="column right" style="background-color:#74C3E1;">
+            <h2>Ask Us a Question!</h2>
+        <p>    
     <p>
       <h3>Co-founders, Brayden and William, want to provide opportunities for a lifestyle that "climbs" above any other lifestyle. We offer coffee that provides and sustains energy for those who need a boost. Those who want to be at the pinnacle of any mountain in their lives. We provide the gear to join us in our hobby of climbing. We offer the best because everyone deserves the best. </h3>
     </p>
     <p>
       Have a question? Email us at <a href="toddbx21@juniata.edu">caffeinatedclimbers@email.com!</a>
     </p>
-  </div>
+        </p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
