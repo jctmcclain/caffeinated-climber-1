@@ -2,9 +2,16 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-table {
+.links {
+  width: 75%;
+  height: 20px;
+  text-align: center;
+  background-color: #BFE2FE;
+}
+.menu {
   width: 30%;
   height: 200px;
+  background-color: #BFE2FE;
 }
 th {
   height: 30px;
