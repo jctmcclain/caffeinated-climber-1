@@ -14,4 +14,14 @@
         <DCOMP>Hot beans</DCOMP>
         <DCATEGORY>Dark Roast</DCATEGORY>
     </BEVERAGE>
+    <BEVERAGE>
+        <DNAME>Everest</DNAME>
+        <DCOMP>Espresso, Steamed milk, and White Chocolate</DCOMP>
+        <DCATEGORY>White Mocha</DCATEGORY>
+    </BEVERAGE>
+    <BEVERAGE>
+        <DNAME>Cortado</DNAME>
+        <DCOMP>A perfect combination of espresso and steamed milk, meticulously crafted to be a 1 to 1 ratio for your perfect coffee experience.</DCOMP>
+        <DCATEGORY>Cortado</DCATEGORY>
+    </BEVERAGE>
 </BEVERAGES>
