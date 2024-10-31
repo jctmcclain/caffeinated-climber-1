@@ -1,17 +1,17 @@
 <BEVERAGES>
     <BEVERAGE>
-        <DNAME>Cappuccino</DNAME>
+        <DNAME>The Frost</DNAME>
         <DCOMP>steamed with frothed milk</DCOMP>
-        <DCATEGORY>coffee</DCATEGORY>
+        <DCATEGORY>Capaccino</DCATEGORY>
     </BEVERAGE>
    <BEVERAGE>
-        <DNAME>Espresso</DNAME>
+        <DNAME>The Climber</DNAME>
         <DCOMP>steamed</DCOMP>
-        <DCATEGORY>coffee</DCATEGORY>
+        <DCATEGORY>Espresso</DCATEGORY>
     </BEVERAGE>
    <BEVERAGE>
-        <DNAME>Latte</DNAME>
-        <DCOMP>steamed with milk</DCOMP>
-        <DCATEGORY>coffee</DCATEGORY>
+        <DNAME>The Caribeaner</DNAME>
+        <DCOMP>Hot beans</DCOMP>
+        <DCATEGORY>Dark Roast</DCATEGORY>
     </BEVERAGE>
 </BEVERAGES>
