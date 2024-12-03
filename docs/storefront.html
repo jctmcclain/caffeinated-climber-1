@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devicce-width, initial-scale=1">
+    <title>Store Front</title>
+  </head>
+  <body>
+    <div class="row align-content-center">
+      <div class="col-md-2">
+        <a href="index.html">Main Page</a>
+      </div>
+      <div class="col-md-3">
+        <a href="aboutus.html">About Us</a>
+      </div>
+      <div class="col-md-2">
+        <a href="services.html">Services</a>
+      </div>
+      <div class="col-md-3">
+        <a href="customerservice.html">Customer Feedback</a>
+      </div>
+      <div class="col-md-2">
+        <a href="storefront.html">Store Front</a>
+      </div>
+    </div>
+    <script>
+function fetchJSONData() {
+	fetch("./storefront.json").then((res) => {
+		if (!res.ok) {
+			throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+	})
+    .then((data) => {
+		rs =  '<div class="row">';
+
+
+		for(i=0;i<data.length;i++) {
+			rs += '<div class="row">';
+			rs += '   <div class="col-md-4">' + data[i].gear_manu + '</div>';
+			rs += '   <div class="col-md-4">' + data[i].gear_name + '</div>';
+      rs += '   <div class="col-md-4">' + data[i].gear_cost + '</div>';
+			rs += '</div>';
+		} 
+		rs += '</div>';
+		document.getElementById("recordset").innerHTML = rs;
+	})
+	.catch((error) =>
+		console.error("Unable to fetch data:", error));
+}
+fetchJSONData();
+
+</script>
+  </body>
+</html>
