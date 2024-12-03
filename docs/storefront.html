@@ -36,10 +36,10 @@ function fetchJSONData() {
 
 
 		for(i=0;i<data.length;i++) {
-			rs += '<div class="row">';
-			rs += '   <div class="col-md-4">' + data[i].gear_manu + '</div>';
-			rs += '   <div class="col-md-4">' + data[i].gear_name + '</div>';
-      rs += '   <div class="col-md-4">' + data[i].gear_cost + '</div>';
+			rs += '<div class="col-md-3">';
+			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_manu + '</div>';
+			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_name + '</div>';
+      			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_cost + '</div>';
 			rs += '</div>';
 		} 
 		rs += '</div>';
