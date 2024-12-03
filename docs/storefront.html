@@ -40,8 +40,8 @@ function fetchJSONData() {
 	})
     .then((data) => {
 	    	    if (4 % 8 === 0){
-		rs =  '<div class="row">';
-		    } else {
+			rs =  '<div class="row">';
+		    } 
 
 
 
@@ -52,9 +52,13 @@ function fetchJSONData() {
       			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_cost + '</div>';
 			rs += '</div>';
 		} 
+
+	    	    if (4 % 8 === 0){
+			rs += '</div>';
 		    }
+    		}
 		    
-		rs += '</div>';
+		// rs += '</div>';
 		document.getElementById("recordset").innerHTML = rs;
 	})
 	.catch((error) =>
