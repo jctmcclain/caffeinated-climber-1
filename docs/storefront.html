@@ -44,7 +44,7 @@ function fetchJSONData() {
 
 
 		for(i=0;i<data.length;i++) {
-			if (i % 4 === 0){
+			if (4 % i === 0){
 			rs =  '<div class="row">';
 		    }
 			
@@ -53,7 +53,7 @@ function fetchJSONData() {
 			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_name + '</div>';
       			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_cost + '</div>';
 			rs += '</div>';
-	    	    if (i % 4 === 0){
+	    	    if (4 % i === 0){
 			rs += '</div>';
 		    }
 			
