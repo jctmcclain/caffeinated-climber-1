@@ -39,23 +39,27 @@ function fetchJSONData() {
         return res.json();
 	})
     .then((data) => {
-	    	    if (4 % 8 === 0){
-			rs =  '<div class="row">';
-		    } 
+ 
 
 
 
 		for(i=0;i<data.length;i++) {
+			if (i % 4 === 0){
+			rs =  '<div class="row">';
+		    }
+			
 			rs += '<div class="col-md-3">';
 			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_manu + '</div>';
 			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_name + '</div>';
       			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_cost + '</div>';
 			rs += '</div>';
-		} 
-
-	    	    if (4 % 8 === 0){
+	    	    if (i % 4 === 0){
 			rs += '</div>';
 		    }
+			
+		} 
+
+
     		}
 		    
 		// rs += '</div>';
