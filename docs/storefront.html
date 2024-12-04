@@ -31,7 +31,10 @@
       </div>
     </div>
     <script>
+	
 function fetchJSONData() {
+	rs = '<div class="container">';
+	
 	fetch("./storefront.json").then((res) => {
 		if (!res.ok) {
 			throw new Error(`HTTP error! Status: ${res.status}`);
@@ -39,30 +42,28 @@ function fetchJSONData() {
         return res.json();
 	})
     .then((data) => {
- 
-
-
-
 		for(i=0;i<data.length;i++) {
-			if (4 % i === 0){
-			rs =  '<div class="row">';
-		    }
+			
+			if(i % 4 === 0) {
+				rs +=  '<div class="row">';
+			}
 			
 			rs += '<div class="col-md-3">';
-			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_manu + '</div>';
-			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_name + '</div>';
-      			rs += '   <div class="card" style="width: 18rem;">' + data[i].gear_cost + '</div>';
+			rs += '   ' + data[i].gear_manu + '<br>';
 			rs += '</div>';
-	    	    if (4 % i === 0){
+			rs += '<div class="col-md-3">';
+			rs += '   ' + data[i].gear_name + '<br>';
 			rs += '</div>';
-		    }
+			rs += '<div class="col-md-3">';
+			rs += '   ' + data[i].gear_cost;
+			rs += '</div>';
 			
-		} 
+			if(i % 4 === 0) {
+				rs += '</div>';
+			}
 
-
-    		}
-		    
-		// rs += '</div>';
+		}
+		rs += '</div>';
 		document.getElementById("recordset").innerHTML = rs;
 	})
 	.catch((error) =>
